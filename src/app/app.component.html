@@ -10,8 +10,8 @@
   <div *ngIf="showEntryDiv" id="formHolder">
       
       <form id="recipe">
-      recipe-name: <input type='text' name='recipe-name' label='recipe-name' [(ngModel)]="recipeName" /><br/>
-      recipe-instructions: <input type='text' name='recipe-instructions' label='recipe-instructions' [(ngModel)]="recipeInstructions" />
+        <label for="recipe-name">recipe-name:</label> <input type='text' name='recipe-name' label='recipe-name' [(ngModel)]="recipeName" /><br/>
+        <label for="recipe-instructions">recipe-instructions:</label> <input type='text' name='recipe-instructions' label='recipe-instructions' [(ngModel)]="recipeInstructions" />
       <button (click)="submitRecipe()">Submit</button>
       </form>
       
