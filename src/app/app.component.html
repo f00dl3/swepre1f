@@ -1,0 +1,21 @@
+<div>
+  <h1 class="doNotRemoveMe">Hello world.</h1>
+  <!-- ^ Do not remove this element ^ -->
+  
+  <h3>My Recipes</h3>
+      {{recipeList}}<br/>
+  
+  <button *ngIf="showEntryDiv == false" id="addRecipeButton" (click)="clickAddRecipe()">Add Recipe</button>
+  
+  <div *ngIf="showEntryDiv" id="formHolder">
+      
+      <form id="recipe">
+      recipe-name: <input type='text' name='recipe-name' label='recipe-name' [(ngModel)]="recipeName" /><br/>
+      recipe-instructions: <input type='text' name='recipe-instructions' label='recipe-instructions' [(ngModel)]="recipeInstructions" />
+      <button (click)="submitRecipe()">Submit</button>
+      </form>
+      
+  </div>
+  
+</div>
+ 
